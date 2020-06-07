@@ -1,0 +1,52 @@
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    height: 100%;
+    font-size: x-large;
+  
+   
+}
+.NavigationItems .svgDiv {
+    display: inline-flex;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    margin-right: 25px;  
+}
+
+.NavigationItems span {
+    display: inline-flex;
+    height: 40px;
+    width: 210px;
+    justify-content: stretch;
+    padding-top: 4.5px;
+   
+}
+
+@media (min-width : 500px) {
+.NavigationItems{
+    flex-flow: row;
+    margin: 0;
+      padding: 0;
+      
+      display: flex;
+     font-size: initial;
+      align-items: center; 
+      height: 100%;
+}
+.NavigationItems .svgDiv {
+    display: none;
+}
+.NavigationItems span {
+    
+    height: 100%;
+    width: auto;
+    justify-content: stretch;
+    padding-top: 0px;
+   
+}
+}
