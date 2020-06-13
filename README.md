@@ -1,3 +1,6 @@
+#Dave's Burger Builder
+Made some UI enhancements to the burger-builder react application that was built during Max Schwasmuller's React Tutorial on Udemy. The project features a combination of most react ecosystem core functionalities such as lifecycle methods and react-hooks, routing using react-router and react-router-dom libraries, state management using redux and redux-saga for asynchronous action calls, axios package for async data fecthing and jest/enzyme for elementary unit tests. The backend database and deployment is managed by Firebase's realtime database. I factored in some UI enhancements with the Material UI library and the sweetalert2 lib for alert modals.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
