@@ -15,7 +15,13 @@ export function* authLogOutSaga(action) {
     yield call([localStorage, 'removeItem'], 'email');
     yield put({
         type: actionTypes.AUTH_LOGOUT
-    }) ;
+    });
+    sweetAlert({
+        icon: 'info',
+        title: 'Logged Out',
+        showConfirmButton: false,
+        timer: 1500,
+       })
 }
 
 export function* authSessLogOutSaga(action) {
@@ -90,7 +96,7 @@ export function* authSaga(action) {
         yield put(actions.authSessLogOut(response.data.expiresIn))
     }
     catch(error){
-           // yield console.log(error.response.data.error.message);
+           yield console.log(error.response.data.error.message);
         yield put(actions.authFail(error));
        yield sweetAlert({
             icon: 'error',
