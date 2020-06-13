@@ -17,13 +17,13 @@ const buildControls = (props) => {
     let orderButton = (<button className={classes.OrderButton}
         disabled={!props.purchasable}
         onClick={props.ordered}
-    > ORDER NOW! </button>);
+    > {props.purchasable? 'ORDER NOW!': 'ADD INGREDIENTS!'} </button>);
 
     if (!props.isAuth) {
         orderButton = (<button className={classes.OrderButton}
             disabled={!props.purchasable}
         onClick={props.ordered}
-        > LOGIN TO CONTINUE </button>);
+        > {props.purchasable? 'LOGIN TO CONTINUE!': 'ADD INGREDIENTS!'}  </button>);
         };
 
     

@@ -11,31 +11,34 @@
 
 
 .OrderButton {
-    background-color: #FF4D02;
+    background-color: #03358a;
     outline: none;
     cursor: pointer;
-    border: 1px solid rgb(243, 49, 1);
+    border: 1px solid #03358a;
     border-radius: 15px;
-    color: #01345E;
+    color: white;
     font-family: inherit;
     font-size: 1.2em;
     width: 260px;
     height: 55px;
-    box-shadow: 2px 2px 2px #C33A00;
+    box-shadow: 2px 2px 2px #03358a;
     margin-top: 5px;
+    font-weight: 600;
 }
 
 .OrderButton:hover, .OrderButton:active {
-    background-color: rgb(247, 137, 90);
-    border:  rgb(243, 49, 1);
-    color: rgb(2, 32, 56);
+    background-color:#234dc2;
+    border: #234dc2;
+    color: white;
+
 }
 
 .OrderButton:disabled {
     background-color: #C7C6C6;
     cursor: not-allowed;
     border: 1px solid #ccc;
-    color: #888888;
+    color: #555555;
+    font-weight: 600;
 }
 
 .OrderButton:not(:disabled) {
